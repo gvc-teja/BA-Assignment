@@ -1,0 +1,9 @@
+#We have a list of 1 L company names , need to find linkedIn company links of these profiles , how to go about this?
+
+
+#Finding LinkedIn company pages for a list of 100,000 company names can be a substantial task.
+#Utilize the LinkedIn API to programmatically search for company pages. LinkedIn's API may require specific permissions and compliance with LinkedIn's terms of service. Need to use the company-search endpoint to search for companies by name.
+#Develop a web scraper to automate the process of searching for company pages on LinkedIn. Need to be cautious with web scraping, and ensure compliance with LinkedIn's terms of service. Note that web scraping may lead to IP blocking if not done carefully.
+
+#These are some ways for finding the linkedIn company links and while doing this task we need to be very careful and always respect LinkedIn's terms of service and avoid any practices that violate their policies.
+#Need to be mindful of legal and ethical considerations when collecting and using company data.

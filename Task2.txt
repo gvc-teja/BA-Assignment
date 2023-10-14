@@ -1,0 +1,8 @@
+#Estimated income range of linkedin profiles
+
+#Estimating the income range of LinkedIn profiles can be challenging as linkedin typically does not provide specific income information.
+# It's crucial to respect individuals' privacy and comply with linkedin's terms of service. 
+#In this type of tasks we can mostly predict the income but accurate results can't be obtained.
+1.Using the Education and Experience ie., considering their education levels and years of experience can help us in estimating the income of the individual.Higher the education and income , higher the income.
+2.Train a machine learning model based on publicly available data to predict income ranges. This would involve using a dataset with known income information and features such as job title, industry, and location.
+3.Analyze the job titles and industries of the linkedin profiles. Job titles and industries are often correlated with income levels. We can use industry salary surveys and reports to estimate the average income associated with specific roles in particular industries.

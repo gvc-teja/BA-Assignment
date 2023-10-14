@@ -1,0 +1,4 @@
+#Need to find an API , through which we can send linkedIn messages to other linkedIn users?
+
+
+#LinkedIn's API is primarily designed for accessing certain information, such as user profiles and job postings, rather than for automating messaging. Moreover, LinkedIn's Terms of Service explicitly prohibit the use of automation for sending messages.

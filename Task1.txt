@@ -1,0 +1,55 @@
+#HANDLING HCAPTCHA WHILE SCRAPING LARGE NUMBER OF WEBSITE PAGES
+
+#USING hcaptcha API
+#Integrate the hCaptcha API into your scraping process. 
+#This involves sending requests to the hCaptcha server to get the challenge, presenting it to the user, and then submitting the solution back to hCaptcha for verification.
+#Using hcaptcha API in scraping process can help us efficiently solve the challenges presented by hcaptcha
+
+#Steps:
+#1.Sign Up for hcaptcha API by registering with an account , This will provide you with API keys that you can use to interact with the hcaptcha service.
+#2.Integrate API in your code, when a challenge is encountered ,make a request to the hcaptcha API to get the challenge details.
+#3.challenge might include solving a puzzle,identifying objects to distinguish humans from bots.
+#4.After completion of the challenge, submit it to the hcaptcha API for verification. The API will respond with a token or confirmation if the solution is correct.
+#5.Use the obtained token or confirmation to proceed with your scraping process. This token can be included in your subsequent requests to the website, allowing you to bypass hCaptcha challenges.
+
+#Sample code
+
+
+import requests
+
+# Replace 'YOUR_API_KEY' with your hCaptcha API key
+HCAPTCHA_API_KEY = 'YOUR_API_KEY'
+SITE_KEY = 'SITE_KEY_OF_THE_TARGET_WEBSITE'
+
+# Function to solve hCaptcha challenge
+def solve_hcaptcha():
+    # Make a request to hCaptcha API to get the challenge details
+    response = requests.post(f'https://hcaptcha.com/siteverify?sitekey={SITE_KEY}&secret={HCAPTCHA_API_KEY}')
+    data = response.json()
+
+    # Display the challenge to the user (or automated solver) and obtain the solution
+    solution = get_solution()
+
+    # Submit the solution to hCaptcha API
+    response = requests.post(f'https://hcaptcha.com/siteverify?sitekey={SITE_KEY}&secret={HCAPTCHA_API_KEY}&response={solution}')
+    result = response.json()
+
+    # Return the result (token or confirmation) to be used in subsequent requests
+    return result.get('token')
+
+# Function to simulate solving the hCaptcha challenge (replace with your implementation)
+def get_solution():
+    # Your logic to solve the hCaptcha challenge
+    return 'SOLUTION'
+
+# Example usage
+token = solve_hcaptcha()
+print(f'Token obtained: {token}')
+
+# Use the token in your scraping requests
+# Continue scraping with the obtained token...
+
+
+#Remember to replace placeholders like 'YOUR_API_KEY' and 'SITE_KEY_OF_THE_TARGET_WEBSITE' with your actual hCaptcha API key and the site key of the website you're scraping.
+#Keep in mind that using the hCaptcha API in this manner should comply with hCaptcha's terms of service, and ensure that your scraping activities adhere to the target website's terms as well.
+#This is one of the ways to handle hcaptcha while scraping a large number of website pages.

@@ -1,0 +1,6 @@
+#How to identify list of companies whose tech stack is built on Python. Give names of 5 companies if possible , by your suggested approach?
+
+
+#Identifying companies whose tech stack is built on Python can be challenging because this information is often not publicly disclosed.
+#Here in this task we can only estimate or predict the companies based on the information like "Job postings","Technology Blogs and articles","Company websites.
+#It's important to note that these methods might not guarantee accurate information about a company's entire tech stack, and Python may not always be explicitly mentioned. Also, companies often use a diverse set of technologies, and Python may be just one component.
